@@ -5,7 +5,9 @@ import TodoInput from "./Components/TodoInput";
 import TodoList from "./Components/TodoList";
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([
+    { input: "Hallo!Add your first todo!", complete: true },
+  ]);
   const [selectedTab, setSelectedTab] = useState("Open");
 
   function handleAddTodo(newTodo) {
